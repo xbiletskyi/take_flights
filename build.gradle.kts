@@ -30,6 +30,8 @@ dependencies {
     developmentOnly("org.springframework.boot:spring-boot-docker-compose")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
+    runtimeOnly("org.postgresql:postgresql")
+    implementation("io.github.cdimascio:dotenv-java:3.0.0")
 }
 
 dependencyManagement {

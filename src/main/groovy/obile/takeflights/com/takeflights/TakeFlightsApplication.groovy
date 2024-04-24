@@ -1,13 +1,13 @@
-package obile.takeflights.com.takeflights
+package obile.takeflights.com.takeflights;
 
-import org.springframework.boot.SpringApplication
-import org.springframework.boot.autoconfigure.SpringBootApplication
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import obile.takeflights.com.takeflights.SideFunctions.EnvPropertyLoader;
 
 @SpringBootApplication
-class TakeFlightsApplication {
-
-    static void main(String[] args) {
-        SpringApplication.run(TakeFlightsApplication, args)
+public class TakeFlightsApplication {
+    public static void main(String[] args) {
+        EnvPropertyLoader.loadProperties();
+        SpringApplication.run(TakeFlightsApplication.class, args);
     }
-
 }
