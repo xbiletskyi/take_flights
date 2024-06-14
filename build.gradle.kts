@@ -31,12 +31,15 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.springframework.security:spring-security-test")
     runtimeOnly("org.postgresql:postgresql")
-
+    // Dotenv
     implementation("io.github.cdimascio:dotenv-java:3.0.0")
+    // Jackson
     implementation("com.fasterxml.jackson.core:jackson-databind:2.15.0")
     implementation("com.fasterxml.jackson.core:jackson-core:2.15.0")
     implementation("com.fasterxml.jackson.core:jackson-annotations:2.15.0")
-    implementation ("org.springframework.boot:spring-boot-starter-data-redis")
+    // Redis
+    implementation("org.springframework.data:spring-data-redis:3.3.0")
+    implementation("io.lettuce:lettuce-core:6.3.2.RELEASE")
 }
 
 dependencyManagement {
