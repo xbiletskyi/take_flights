@@ -1,7 +1,7 @@
 plugins {
-    groovy
     id("org.springframework.boot") version "3.2.5"
     id("io.spring.dependency-management") version "1.1.4"
+    java
 }
 
 group = "obile.takeflights.com"
@@ -23,7 +23,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.apache.groovy:groovy")
     implementation("org.springframework.cloud:spring-cloud-starter-gateway-mvc")
     implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-server")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
