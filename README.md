@@ -1,4 +1,2 @@
 # TakeFlights microservice
-The first part of training project. This microservice is defined to utilize API calls for flights and 
-store them in cache database.
-
+ARCHIVED: old API provider does not satisfy the project requirements, adding LICENSE to the new project from the start. The old version is free to use even though not having any value
